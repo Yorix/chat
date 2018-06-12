@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10.0" style="-fx-background-color: #ca8;" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="with_fxml.Controller">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+    <TextArea fx:id="txtHistory" editable="false" VBox.vgrow="ALWAYS"/>
+    <HBox spacing="10.0">
+        <TextField fx:id="txtSend" HBox.hgrow="ALWAYS"/>
+        <Button fx:id="btnSend" defaultButton="true" mnemonicParsing="false" onAction="#send" text="Send"/>
+    </HBox>
+</VBox>
